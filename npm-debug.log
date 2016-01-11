@@ -1,0 +1,55 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'adduser' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 verbose config Skipping project config: /Users/hassanoor/.npmrc. (matches userconfig)
+5 verbose adduser before first PUT { _id: 'org.couchdb.user:hassanoor',
+5 verbose adduser   name: 'hassanoor',
+5 verbose adduser   password: 'XXXXX',
+5 verbose adduser   email: 'hass1jam@gmail.com',
+5 verbose adduser   type: 'user',
+5 verbose adduser   roles: [],
+5 verbose adduser   date: '2016-01-07T00:29:55.490Z' }
+6 verbose request uri https://registry.npmjs.org/-/user/org.couchdb.user:hassanoor
+7 verbose request new user, so can't send auth
+8 info attempt registry request try #1 at 7:29:55 PM
+9 verbose request id 6a72f249443261a3
+10 http request PUT https://registry.npmjs.org/-/user/org.couchdb.user:hassanoor
+11 http 400 https://registry.npmjs.org/-/user/org.couchdb.user:hassanoor
+12 verbose headers { 'content-type': 'application/json',
+12 verbose headers   'cache-control': 'max-age=300',
+12 verbose headers   'content-length': '57',
+12 verbose headers   'accept-ranges': 'bytes',
+12 verbose headers   date: 'Thu, 07 Jan 2016 00:29:56 GMT',
+12 verbose headers   via: '1.1 varnish',
+12 verbose headers   connection: 'keep-alive',
+12 verbose headers   'x-served-by': 'cache-jfk1021-JFK',
+12 verbose headers   'x-cache': 'MISS',
+12 verbose headers   'x-cache-hits': '0',
+12 verbose headers   'x-timer': 'S1452126595.607249,VS0,VE501' }
+13 verbose request invalidating /Users/hassanoor/.npm/registry.npmjs.org/-/user/org.couchdb.user_3Ahassanoor on PUT
+14 verbose adduser back [ { [Error: Unknown error while authenticating : -/user/org.couchdb.user:hassanoor] statusCode: 400, code: 'E400' },
+14 verbose adduser   { ok: false, error: 'Unknown error while authenticating' },
+14 verbose adduser   '{"ok":false,"error":"Unknown error while authenticating"}' ]
+15 verbose stack Error: Unknown error while authenticating : -/user/org.couchdb.user:hassanoor
+15 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+15 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+15 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+15 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+15 verbose stack     at emitTwo (events.js:87:13)
+15 verbose stack     at Request.emit (events.js:172:7)
+15 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1082:10)
+15 verbose stack     at emitOne (events.js:82:20)
+15 verbose stack     at Request.emit (events.js:169:7)
+15 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+16 verbose statusCode 400
+17 verbose cwd /Users/hassanoor/Documents/Bower/prac
+18 error Darwin 15.2.0
+19 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "adduser"
+20 error node v5.3.0
+21 error npm  v3.3.12
+22 error code E400
+23 error Unknown error while authenticating : -/user/org.couchdb.user:hassanoor
+24 error If you need help, you may report this error at:
+24 error     <https://github.com/npm/npm/issues>
+25 verbose exit [ 1, true ]
